@@ -14,6 +14,7 @@ export class AppComponent  {
   str="";
   Hasil=0;
   View(){
+    this.count();
     this.router.navigate(['/view']);
   }
   getHasil(){

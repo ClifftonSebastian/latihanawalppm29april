@@ -38,7 +38,7 @@ export class AppComponent  {
       this.Hasil = parseInt(this.input1) + parseInt(this.input2);
     }
     else if(this.Operator1 == '-'){
-      this.Hasil = parseInt(this.input1) + parseInt(this.input2);
+      this.Hasil = parseInt(this.input1) - parseInt(this.input2);
     }
     else{
       this.Hasil = 0;

@@ -1,0 +1,24 @@
+<hello name="{{ name }}"></hello>
+<input [(ngModel)]="in" type="text" value="{{str}}">
+<br>
+<button (click)="Input(7)">7</button> 
+<button (click)="Input(8)">8</button> 
+<button (click)="Input(9)">9</button>
+<br>
+<button (click)="Input(4)">4</button> 
+<button (click)="Input(5)">5</button> 
+<button (click)="Input(6)">6</button> 
+<br>
+<button (click)="Input(1)">1</button> 
+<button (click)="Input(2)">2</button> 
+<button (click)="Input(3)">3</button> 
+<br>
+<button (click)="InputOpr('+')">+</button> 
+<button (click)="InputOpr('-')">-</button> 
+<button (click)="InputOpr('*')">*</button> 
+<br>
+<button (click)="View()">        =         </button>
+<br>
+<input [(ngModel)]="in1" type="text" value="{{input1}}">
+<input [(ngModel)]="in2" type="text" value="{{input2}}">
+<router-outlet></router-outlet>

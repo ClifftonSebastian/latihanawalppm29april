@@ -11,7 +11,6 @@ export class AppComponent  {
   input1 = "";
   input2 = "";
   Operator1="";
-  str="";
   Hasil=0;
   View(){
     this.count();
@@ -23,16 +22,13 @@ export class AppComponent  {
   Input(x){
     if(this.Operator1==""){
       this.input1+=x;
-      this.str+=x;
     }
     else{
       this.input2+=x;
-      this.str+=x;
     }
   }
   InputOpr(x){
     this.Operator1=x;
-    this.str+=x;
   }
   count(){
     if(this.Operator1 == '*'){
@@ -47,6 +43,9 @@ export class AppComponent  {
     else{
       this.Hasil = 0;
     }
+    this.input1 = "";
+    this.input2 = "";
+    this.Operator1="";
   }
 
 }
